@@ -1,0 +1,34 @@
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.slider {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px #999 solid;
+    position: relative;
+}
+
+.slider .viewport {
+    overflow: hidden;
+}
+
+.slider .button {
+    position: absolute;
+    top: 31px;
+}
+
+.slider .button.prev {
+    left: -80px;
+}
+
+.slider .button.next {
+    right: -80px;
+}
+
+.slider .item {
+    float: left;
+    width: 125px;
+}

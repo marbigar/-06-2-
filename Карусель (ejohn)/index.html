@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script type="text/html" id="slider_tmpl">
+    <div class="slider">
+        <div class="viewport">
+            <div class="items clearfix" style="width: 750px">
+                <% for ( var i = 0; i < users.length; i++ ) { %>
+                    <div class="item">
+                        <ul>
+                            <li><%= users[i].name %></li>
+                            <li><%= users[i].surname %></li>
+                            <li><%= users[i].age %></li>
+                        </ul>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button prev">Назад</button>
+            <button class="button next">Вперед</button>
+        </div>
+    </div>
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/ejohn.template.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
